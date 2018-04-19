@@ -1,0 +1,29 @@
+{
+    "name": "videojs",
+    "dependencies": {
+        "aes-decrypter": "^3.0.0",
+        "browserify-versionify": "^1.0.6",
+        "global": "^4.3.2",
+        "jquery": "^3.3.1",
+        "mux.js": "^4.4.1",
+        "object-assign": "^4.1.1",
+        "url-toolkit": "^2.1.4",
+        "videojs-contrib-hls": "^5.14.1",
+        "videojs-contrib-media-sources": "^4.7.2",
+        "videojs-contrib-quality-levels": "^2.0.4",
+        "videojs-flash": "^2.1.0",
+        "videojs-hotkeys": "^0.2.21",
+        "vue": "^2.5.16",
+        "webwackify": "^0.1.6"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-babel": "^7.0.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-minify-html": "^1.0.6",
+        "gulp-plumber": "^1.2.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-util": "^3.0.8",
+        "video.js": "^6.7.3"
+    }
+}
