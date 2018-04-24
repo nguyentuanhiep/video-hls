@@ -1,6 +1,7 @@
 Vue.component('components-list', {
     template: 
-        `<a href="video1.html">
+    `<div>
+        <a href="video1.html">
             <div class="list-video">
                 <div class="left">
                     <img src="./audio/img/ronaldo.jpg">
@@ -25,8 +26,8 @@ Vue.component('components-list', {
                     <p>output_dash.mp4</p>
                 </div>
             </div>
-        </a>`
-    
+        </a>
+    </div>`
 })
 
 
