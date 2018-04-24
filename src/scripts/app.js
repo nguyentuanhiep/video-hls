@@ -1,24 +1,27 @@
-Vue.component('components-1', {template: '<video  id="video"  class="video-js vjs-default-skin" controls></video>'})
-Vue.component('components-2', {template: '<div class="videojs-overlay" id="overlay"><div class="onvideo"><img src="./audio/img/logo.png" alt="Video.js" class="logo"></div></div>'})
+
+Vue.component('components-video', {
+    template: '<video  id="video"  class="video-js vjs-default-skin" controls><source src="./audio/master.m3u8" type="application/x-mpegURL"></video>'
+})
+
+Vue.component('components-info', {
+    template: '<div class="videojs-overlay" id="overlay"><div class="onvideo"><img src="./audio/img/logo.png" alt="Video.js" class="logo"></div></div>'
+})
 
 var app = new Vue({
     el: '#app' 
 })
 
 videojs('video', {
-    playbackRates: [0.5, 1, 1.5, 2, 2.5, 3],
-  
+    playbackRates: [0.5, 1, 1.5, 2, 2.5, 3], 
 });
 
 
-var player = videojs('video');
+var player  = videojs('video');
 
-player.ready(function () {
-    player.src({
-        src: "/audio/Manifest/output_dash.mpd",
-        type: 'application/dash+xml',
-    });
-});
+player.hlsQualitySelector();
+var qualityLevels = player.qualityLevels();
+console.log(qualityLevels);
+
 
 player.on(['play', 'playing'], function () {
     $("#overlay").hide();
@@ -26,3 +29,4 @@ player.on(['play', 'playing'], function () {
 player.on(['pause'], function () {
     $("#overlay").show();
 });
+

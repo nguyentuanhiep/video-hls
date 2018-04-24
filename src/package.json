@@ -12,6 +12,7 @@
         "videojs-contrib-media-sources": "^4.7.2",
         "videojs-contrib-quality-levels": "^2.0.4",
         "videojs-flash": "^2.1.0",
+        "videojs-hls-quality-selector": "0.0.2",
         "videojs-hotkeys": "^0.2.21",
         "vue": "^2.5.16",
         "webwackify": "^0.1.6"
